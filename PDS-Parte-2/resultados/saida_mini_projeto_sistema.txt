@@ -1,0 +1,23 @@
+Etapa 7: H(s) = ωn² / (s² + 2ζωn s + ωn²)
+   fn = 30 Hz | ωn = 188.50 rad/s | ζ = 0.1 | 2ζωn = 37.699 | ωn² = 35530.6
+   polos: [-18.85+187.55j -18.85-187.55j] | zeros: nenhum
+   frequência amortecida = 29.85 Hz | constante de tempo 1/(ζωn) = 53.1 ms | tempo de acomodação 4/(ζωn) = 0.212 s
+   degrau: pico 1.729 em t = 16.8 ms | valor final 1.000
+   |H(j2π·30)| = 5.0000 (500.0% transmitido)
+   |H(j2π·120)| = 0.0666 (6.7% transmitido)
+   vibração do motor: pico de entrada 1.383 g | pico transmitido em regime 5.018 g
+Etapa 8: Ts = 1 ms | B(z) = [0.017492 0.017274] | A(z) = [ 1.       -1.928237  0.963003]
+   polos: [0.96412+0.18297j 0.96412-0.18297j] | |p| = [0.98133 0.98133] | ângulo = [ 0.18755 -0.18755] rad
+   zero: [-0.9875] | estável: True
+   h[n]: máx |h| = 0.1620 | |h[599]| = 1.79e-06 | soma |h| = 6.377
+   degrau discreto x contínuo nos instantes nTs: diferença máxima = 1.4e-14
+Etapa 9: mapeamento z = e^(s Ts) do polo s = -18,85 + j187,55
+   Ts =    1 ms | z = +0.9641 +0.1830j | |z| = e^(σTs) = 0.9813 | ângulo = ωTs = +0.1876 rad (+10.7°) | ωTs/π = 0.060
+   Ts =    5 ms | z = +0.5384 +0.7337j | |z| = e^(σTs) = 0.9101 | ângulo = ωTs = +0.9378 rad (+53.7°) | ωTs/π = 0.298
+   Ts =   10 ms | z = -0.2485 +0.7901j | |z| = e^(σTs) = 0.8282 | ângulo = ωTs = +1.8755 rad (+107.5°) | ωTs/π = 0.597
+   Ts =   20 ms | z = -0.5624 -0.3926j | |z| = e^(σTs) = 0.6859 | ângulo = ωTs = -2.5322 rad (-145.1°) | ωTs/π = 1.194
+   e^(s Ts) com Ts = 1 ms: [0.964118-0.182971j 0.964118+0.182971j]
+   polos do modelo ZOH:     [0.964118-0.182971j 0.964118+0.182971j]
+   diferença máxima: 4.3e-16
+   zero criado pela discretização ZOH (o contínuo não tem zeros): -0.9875
+   Ts máximo sem aliasing do polo: π/ωd = 16.8 ms

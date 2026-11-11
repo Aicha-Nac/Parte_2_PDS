@@ -1,0 +1,31 @@
+== topico10_laplace.py
+== topico11_funcao_transferencia.py
+== topico12_polos_zeros_plano_s.py
+== topico13_transformada_z.py
+Polos do sistema: [0.6+0.52915026j 0.6-0.52915026j]
+Zeros do sistema: [0.5 0. ]
+== topico14_regiao_convergencia.py
+== topico15_ft_discreta.py
+ -0.80 |     0.1074 |    -0.0015 |     4.48 |       4.99 | ESTÁVEL
+== topico16_estabilidade_plano_z.py
+== topico17_z_e_dtft.py
+Zeros: [-1.  1.]
+Polos: [0.45+0.7794j 0.45-0.7794j]  |p| = [0.9 0.9]
+Erro máx. |freqz - H(e^jw)| = 1.80e-14
+Pico: |H| = 10.526 em ω = 0.334π rad/amostra
+|H(e^j0)| = 0.000e+00   |H(e^jπ)| = 0.000e+00
+Erro máx. |H| geométrico vs. direto = 1.07e-14
+== topico18_laplace_e_z.py
+Exemplo: s = -2, Ts = 0.1 -> z = e^(-0.2) = 0.8187, |z| = 0.8187
+
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Ts = 0.05 s -> faixa primária |Im(s)| < π/Ts =  62.83 rad/s
+Ts = 0.10 s -> faixa primária |Im(s)| < π/Ts =  31.42 rad/s
+Ts = 0.30 s -> faixa primária |Im(s)| < π/Ts =  10.47 rad/s
+Ts = 0.70 s -> faixa primária |Im(s)| < π/Ts =   4.49 rad/s
+
+Aliasing: s = (-1+5j), Ts = 0.7: ln(z)/Ts = (-1-3.976j) (ωTs = 3.50 > π)
+Exato: z = 0.0907   Euler progressivo: z = -1.4000 (|z|>1 -> instável)

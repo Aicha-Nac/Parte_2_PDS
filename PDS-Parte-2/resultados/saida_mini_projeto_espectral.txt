@@ -1,0 +1,13 @@
+Etapa 2: x(t) = 1.0 cos(2π·30t) + 0.4 cos(2π·120t + π/4) g, observação de 1 s
+Etapa 3: fmax = 120 Hz | Nyquist exige fs > 240 Hz | fs = 1000 Hz | Ts = 1 ms | N = 1000 | fs/fmax = 8.33
+Etapa 4: Δf = fs/N = 1 Hz
+   pico em   30.0 Hz | amplitude 1.0000 g | fase   -0.00°
+   pico em  120.0 Hz | amplitude 0.4000 g | fase   45.00°
+   maior amplitude fora dos picos: 9.0e-15 g
+Etapa 5: fs = 1000.0 Hz | fs/2 = 500.0 Hz | picos: 30 Hz (1.000 g), 120 Hz (0.400 g)
+Etapa 5: fs =  200.0 Hz | fs/2 = 100.0 Hz | picos: 30 Hz (1.000 g), 80 Hz (0.400 g)
+Etapa 5: fs =  150.0 Hz | fs/2 =  75.0 Hz | picos: 30 Hz (1.314 g)
+Etapa 6: N = 256 | Δf = 3.906 Hz | 30 Hz = 7.68 bins | 120 Hz = 30.72 bins
+   Retangular | 30 Hz: bin  31.25 Hz, 0.847 g | 120 Hz: bin 121.09 Hz, 0.359 g | nível em 75 Hz  -32.5 dB | em 200 Hz  -37.0 dB
+   Hann       | 30 Hz: bin  31.25 Hz, 0.936 g | 120 Hz: bin 121.09 Hz, 0.380 g | nível em 75 Hz  -75.1 dB | em 200 Hz  -95.3 dB
+   Hamming    | 30 Hz: bin  31.25 Hz, 0.922 g | 120 Hz: bin 121.09 Hz, 0.377 g | nível em 75 Hz  -49.4 dB | em 200 Hz  -53.7 dB

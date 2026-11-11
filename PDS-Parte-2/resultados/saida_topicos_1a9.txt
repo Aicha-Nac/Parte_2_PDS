@@ -1,0 +1,74 @@
+== topico01_exponenciais.py
+Frequência | A = 1.0 | ω0 = π/16  | φ = 0    | período =   32 amostras | x[0] =  1.000 | máx =  1.00
+Frequência | A = 1.0 | ω0 = π/8   | φ = 0    | período =   16 amostras | x[0] =  1.000 | máx =  1.00
+Frequência | A = 1.0 | ω0 = π/4   | φ = 0    | período =    8 amostras | x[0] =  1.000 | máx =  1.00
+Fase       | A = 1.0 | ω0 = π/8   | φ = 0    | período =   16 amostras | x[0] =  1.000 | máx =  1.00
+Fase       | A = 1.0 | ω0 = π/8   | φ = π/4  | período =   16 amostras | x[0] =  0.707 | máx =  1.00
+Fase       | A = 1.0 | ω0 = π/8   | φ = π/2  | período =   16 amostras | x[0] =  0.000 | máx =  1.00
+Amplitude  | A = 0.5 | ω0 = π/8   | φ = 0    | período =   16 amostras | x[0] =  0.500 | máx =  0.50
+Amplitude  | A = 1.0 | ω0 = π/8   | φ = 0    | período =   16 amostras | x[0] =  1.000 | máx =  1.00
+Amplitude  | A = 2.0 | ω0 = π/8   | φ = 0    | período =   16 amostras | x[0] =  2.000 | máx =  2.00
+Parte real de e^{jw0n} igual a cos(w0n): True
+Parte imaginária de e^{jw0n} igual a sen(w0n): True
+Maior parte imaginária de (e^jw0n + e^-jw0n)/2: 0.0e+00
+(e^jw0n + e^-jw0n)/2 igual a cos(w0n): True
+== topico02_dtft.py
+Diferença máxima entre a soma e a fórmula analítica: 1.8e-15
+|X| em w = 0: 5.0000 (soma das amostras = 5)
+|X| em w = 2π/5 = 1.2566 rad/amostra: 2.5e-16
+|X| em w = 4π/5 = 2.5133 rad/amostra: 3.5e-16
+Inversa numérica, x[-2] = -0.000
+Inversa numérica, x[-1] =  0.000
+Inversa numérica, x[ 0] =  1.000
+Inversa numérica, x[ 1] =  1.000
+Inversa numérica, x[ 2] =  1.000
+Inversa numérica, x[ 3] =  1.000
+Inversa numérica, x[ 4] =  1.000
+Inversa numérica, x[ 5] =  0.000
+Inversa numérica, x[ 6] = -0.000
+Inversa numérica, x[ 7] =  0.000
+== topico03_dft.py
+fs = 1000 Hz | N = 200 | Δf = fs/N = 5 Hz
+ k | f (Hz) | |X[k]| | amplitude | fase (graus)
+10 |   50.0 | 100.00 |    1.0000 |   -0.00
+24 |  120.0 |  50.00 |    0.5000 |  -60.00
+Simetria X[N-k] = conj(X[k]): True
+Maior amplitude fora dos picos: 2.4e-15
+== topico05_resolucao.py
+    N | Δf (Hz) | duração (ms) | picos encontrados entre 80 e 130 Hz
+   64 |  15.625 |           64 | [109.7]
+  256 |   3.906 |          256 | [100. 110.]
+ 1024 |   0.977 |         1024 | [100. 110.]
+== topico06_freq_normalizada.py
+f (Hz) | fs (Hz) | fn (ciclos/amostra) | ω (rad/amostra) | ω/π | amostras por período | ω em (-π, π]
+    50 |    1000 |              0.0500 |          0.3142 | 0.100 |                20.00 |  0.3142 (+0.100π)
+   120 |    1000 |              0.1200 |          0.7540 | 0.240 |                 8.33 |  0.7540 (+0.240π)
+   250 |    1000 |              0.2500 |          1.5708 | 0.500 |                 4.00 |  1.5708 (+0.500π)
+   500 |    1000 |              0.5000 |          3.1416 | 1.000 |                 2.00 |  3.1416 (+1.000π)
+   440 |    8000 |              0.0550 |          0.3456 | 0.110 |                18.18 |  0.3456 (+0.110π)
+   440 |   44100 |              0.0100 |          0.0627 | 0.020 |               100.23 |  0.0627 (+0.020π)
+  1000 |    8000 |              0.1250 |          0.7854 | 0.250 |                 8.00 |  0.7854 (+0.250π)
+    70 |     100 |              0.7000 |          4.3982 | 1.400 |                 1.43 | -1.8850 (-0.600π)
+50 Hz com fs = 1000 Hz e 100 Hz com fs = 2000 Hz geram a mesma sequência: True
+== topico07_nyquist.py
+f0 = 10 Hz, fase = π/3, observação de 2 s
+fs > 2f0  | fs = 100.0 Hz | 10.0 amostras por período | Δf = 0.50 Hz | pico em 10.00 Hz com amplitude 1.000 | primeiras amostras [ 0.5   -0.105 -0.669 -0.978]
+fs = 2f0  | fs =  20.0 Hz |  2.0 amostras por período | Δf = 0.50 Hz | pico em 10.00 Hz com amplitude 0.500 | primeiras amostras [ 0.5 -0.5  0.5 -0.5]
+fs < 2f0  | fs =  15.0 Hz |  1.5 amostras por período | Δf = 0.50 Hz | pico em  5.00 Hz com amplitude 1.000 | primeiras amostras [ 0.5  0.5 -1.   0.5]
+== topico08_aliasing.py
+f0 = 70 Hz, fs = 100 Hz, fs/2 = 50 Hz
+Pico do espectro em 30 Hz (amplitude 1.000); previsão |f0 - fs| = 30 Hz
+Amostras de 70 Hz iguais às de 30 Hz: True
+f0 (Hz) | prevista (Hz) | medida no espectro (Hz)
+     30 |            30 | 30
+     70 |            30 | 30
+    130 |            30 | 30
+    170 |            30 | 30
+    230 |            30 | 30
+    270 |            30 | 30
+== topico09_janelamento.py
+Δf = 3.906 Hz | f0/Δf = 25.60 (não é inteiro: a senoide cai entre dois bins)
+Janela     | lóbulo principal (bins) | maior lóbulo lateral (dB) | pico (Hz) | amplitude no pico | nível a 50 Hz do pico (dB)
+Retangular |                    2.00 |                     -13.3 |    101.56 |             0.763 | -37.0
+Hann       |                    4.00 |                     -31.5 |    101.56 |             0.901 | -81.2
+Hamming    |                    4.00 |                     -42.7 |    101.56 |             0.881 | -53.9
